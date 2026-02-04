@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figcaption {
+  line-height: calc(1em + 0.5rem);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* Major Third */
+
+  /* 16px font -> 24px height (1.5x) */
+  --font-base: 1rem/1.5;
+
+  /* 20px font -> 32px height (1.6x) */
+  --font-md: 1.25rem/1.6;
+
+  /* 25px font -> 32px height (1.28x) - TIGHT FIT */
+  --font-lg: 1.563rem/1.28;
+
+  /* 31px font -> 40px height (1.29x) */
+  --font-xl: 1.953rem/1.28;
+
+  /* 39px font -> 48px height (1.23x) */
+  --font-2xl: 2.441rem/1.23;
+
+  /* 49px font -> 56px height (1.14x) */
+  --font-3xl: 3.052rem/1.14;
+
+  /* 61px font -> 72px height (1.18x) */
+  --font-4xl: 3.815rem/1.18;
+
+  /* Perfect Fourth */
+  /* 16px font -> 24px height (1.5x) */
+  --font-base: 1rem/1.5;
+
+  /* 21px font -> 32px height (1.5x) */
+  --font-md: 1.333rem/1.5;
+
+  /* 28px font -> 40px height (1.42x) */
+  --font-lg: 1.777rem/1.42;
+
+  /* 38px font -> 48px height (1.26x) */
+  --font-xl: 2.369rem/1.26;
+
+  /* 51px font -> 64px height (1.25x) */
+  --font-2xl: 3.157rem/1.25;
+
+  /* 67px font -> 80px height (1.19x) */
+  --font-3xl: 4.209rem/1.19;
+
+  /* 90px font -> 96px height (1.06x) - VERY TIGHT (Hero only) */
+  --font-4xl: 5.61rem/1.06;
+}
